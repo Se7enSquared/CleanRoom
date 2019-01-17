@@ -10,16 +10,14 @@
     1/16/2019 */
 
 const input_array = [1, 2, 4, 591, 392, 391, 2, 5, 10, 2, 1, 1, 1, 20, 20];
-const sorted_array = input_array.sort();
 // output array
 const new_array = [];
 // dictionary to hold count of repeated items in sorted_array
 const dict = {}
 
 // store array value and count of value in dictionary object
-for (var i = 0; i < sorted_array.length; i++) {
-    let current = sorted_array[i];
-    console.log(sorted_array[i]);
+for (var i = 0; i < input_array.length; i++) {
+    let current = input_array[i];
     if (current in dict) {
         dict[current] += 1;
     }
